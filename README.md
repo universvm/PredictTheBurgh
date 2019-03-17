@@ -1,10 +1,19 @@
 # PredictTheBurgh
 
+<p align="center">
+  <img src="img/logo.png">
+</p>
+
 ## Inspiration
 We wanted to understand whether there are predictable patterns in the movement of stock prices, and whether deep neural network models would be able to learn these patterns.
 
 ## What it does
 We applied state-of-the-art RNNs using LSTM and GRU units to the task of stock price prediction, as well as CNNs. We sourced our own high frequency intraday data.
+
+<p align="center">
+  <img src="img/graphs.png">
+</p>
+
 
 ## Challenges we ran into
 Obtaining high granularity intraday data was our main challenge: the best freely available data is only day OHLC candles (Open-High-Low-Close). 
@@ -25,6 +34,10 @@ We were astonished to find out about the low standards of scientific publishing 
 
 ## What we learned
 We learned that modelling the stock price itself is a fool's errand. While price movements may have an autoregressive component, the majority of the movement clearly comes from external events. Attempting to connect events and movements is a hard task that requires high quality data sources and an exploration of different models.
+
+<p align="center">
+  <img src="img/literature.png">
+</p>
 
 ## What's next for PredictTheBurgh
 We deem our findings worthy of dissemination, and so will aim to publish them as a paper and/or blog post.
