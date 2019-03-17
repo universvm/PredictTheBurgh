@@ -22,6 +22,8 @@ We observed early on that intraday movement is too significant to ignore: exclus
 
 Further problems were found in the published code that we were able to obtain that already implemented these models. We discovered many unreasonable assumptions in the training and testing of them. 
 
+Particularly, we discovered that all papers we reviewed were measuring their performance entirely on following the curve of prices, by training on 4 time points and trying to predict the next one. At the next step, it would again be a combination of the previous 4, trying to predict the 5th. This leads to essentially a line that followed the ground truth prices with a delay, essentially "predicting" yesterday's price. Please see image attached.
+
 ## How we built it
 We prototyped in Jupyter notebooks using Keras as a high level interface to Tensorflow. We tested several RNN models with LSTM and GRU units and also tested a Conv1d with dropout.
 
